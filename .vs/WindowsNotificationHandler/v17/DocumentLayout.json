@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|c:\\users\\ivan\\source\\repos\\windowsnotificationhandler\\windowsnotificationhandler\\notificationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|solutionrelative:windowsnotificationhandler\\notificationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\windowsnotificationhandler\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|solutionrelative:windowsnotificationhandler\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\windowsnotificationhandler\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|solutionrelative:windowsnotificationhandler\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\windowsnotificationhandler\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}",
+      "RelativeMoniker": "D:0:0:{118FA805-22F2-4FF5-8109-B01EFC77B2E6}|WindowsNotificationHandler\\WindowsNotificationHandler.csproj|solutionrelative:windowsnotificationhandler\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Package.appxmanifest",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\Package.appxmanifest",
+              "RelativeDocumentMoniker": "WindowsNotificationHandler\\Package.appxmanifest",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\Package.appxmanifest",
+              "RelativeToolTip": "WindowsNotificationHandler\\Package.appxmanifest",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
+              "WhenOpened": "2025-03-11T22:24:35.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "WindowsNotificationHandler\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\MainPage.xaml.cs",
+              "RelativeToolTip": "WindowsNotificationHandler\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T00:36:39.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\NotificationHandler.cs",
+              "RelativeDocumentMoniker": "WindowsNotificationHandler\\NotificationHandler.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\NotificationHandler.cs",
+              "RelativeToolTip": "WindowsNotificationHandler\\NotificationHandler.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T00:49:10.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\App.xaml.cs",
+              "RelativeDocumentMoniker": "WindowsNotificationHandler\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\WindowsNotificationHandler\\WindowsNotificationHandler\\App.xaml.cs",
+              "RelativeToolTip": "WindowsNotificationHandler\\App.xaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwCgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T00:36:17.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
