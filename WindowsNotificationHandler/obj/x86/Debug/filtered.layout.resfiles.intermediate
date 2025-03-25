@@ -10,6 +10,7 @@ Assets\SmallTile.scale-125.png
 Assets\SmallTile.scale-150.png
 Assets\SmallTile.scale-200.png
 Assets\SmallTile.scale-400.png
+Assets\Sounds\alert.ogg
 Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-125.png
 Assets\SplashScreen.scale-150.png
@@ -40,6 +41,7 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\Square44x44Logo.targetsize-256.png
 Assets\Square44x44Logo.targetsize-32.png
 Assets\Square44x44Logo.targetsize-48.png
+Assets\StoreLogo.backup.png
 Assets\StoreLogo.scale-100.png
 Assets\StoreLogo.scale-125.png
 Assets\StoreLogo.scale-150.png

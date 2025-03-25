@@ -1,1 +1,1 @@
-C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\WindowsNotificationHandler.csproj;x86
+C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\WindowsNotificationHandler.csproj;x86

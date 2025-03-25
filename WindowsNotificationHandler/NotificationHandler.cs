@@ -5,14 +5,24 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.Background;
+using Windows.Devices.Radios;
 using Windows.Foundation.Metadata;
 using Windows.Media.Playback;
+using Windows.Media.SpeechSynthesis;
 using Windows.UI.Notifications;
 using Windows.UI.Notifications.Management;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Documents;
+using static System.Net.Mime.MediaTypeNames;
 
+// Notification Test Format. 
+// Title:  yape: confirmación de pago
+// Content: Yape! Esau J. Fuentes M. te envió un pago por S/ 23.50
 namespace WindowsNotificationHandler
 {
     public class NotificationHandler
@@ -23,14 +33,15 @@ namespace WindowsNotificationHandler
         public NotificationHandler()
         {
             listener = UserNotificationListener.Current;
+            yapeNotifications = new List<UserNotification>();
             allowedNotificationTitles = new HashSet<string>
             {
                 "pushbullet: test notification",
                 "yape: confirmación de pago",
             };
-            requestNotificationAccess();
+
         }
-        // Check if the listener is working or supported 
+        // Check if the listener is supported 
         public bool isSupported()
         {
             if (ApiInformation.IsTypePresent("Windows.UI.Notifications.Management.UserNotificationListener"))
@@ -48,28 +59,6 @@ namespace WindowsNotificationHandler
             }
         }
 
-
-        public static void WriteNotificationsToFile(IList<UserNotification> notifications, string fileName)
-        {
-            using (StreamWriter writer = new StreamWriter(fileName))
-            {
-                foreach (var notification in notifications)
-                {
-                    // Write the notification data to the file
-                    writer.WriteLine($"ID: {notification.Id}");
-                    writer.WriteLine(); // Adds a blank line between notifications for readability
-                }
-            }
-
-            Debug.WriteLine("Notifications written to file successfully.");
-        }
-        private void storeNotification(UserNotification notification)
-        {
-            yapeNotifications.Add(notification);
-            Debug.WriteLine("yapeNotifications: \n" + yapeNotifications);
-        }
-
-        //event Handler async structure 
         public async Task requestNotificationAccess()
         {
             if (!isSupported())
@@ -89,67 +78,192 @@ namespace WindowsNotificationHandler
             }
 
         }
-        public async void readNotifications()
+
+        async public Task RequestBackgrounExecutionAccess()
         {
-
-            IReadOnlyList<UserNotification> userNotifications = await listener.GetNotificationsAsync(NotificationKinds.Toast);
-
-            foreach (UserNotification userNotification in userNotifications)
+            BackgroundAccessStatus backgroundAcccess = await BackgroundExecutionManager.RequestAccessAsync();
+            switch (backgroundAcccess)
             {
-                if (!isValidNotification( userNotification))
-                {
-                    continue; 
-                }
-                Debug.WriteLine("ID: " + userNotification.Id);
-                IList<NotificationBinding> nBindings = userNotification.Notification.Visual.Bindings;
+                case BackgroundAccessStatus.Unspecified:
+                    Debug.WriteLine("BackgroundAccessStatus.Unspecified");
+                    break;
+                case BackgroundAccessStatus.AlwaysAllowed:
+                    Debug.WriteLine("BackgroundAccessStatus.AlwaysAllowed");
+                    break;
+                case BackgroundAccessStatus.AllowedSubjectToSystemPolicy:
+                    Debug.WriteLine("BackgroundAccessStatus.AllowedSubjectToSystemPolicy");
+                    break;
+                case BackgroundAccessStatus.DeniedBySystemPolicy:
+                    Debug.WriteLine("BackgroundAccessStatus.DeniedBySystemPolicy");
+                    break;
+                case BackgroundAccessStatus.DeniedByUser:
+                    Debug.WriteLine("BackgroundAccessStatus.DeniedByUser");
+                    break;
 
-                foreach (var binding in nBindings)
+            }
+            //checks and Place the Background Task
+            if (!BackgroundTaskRegistration.AllTasks.Any(i => i.Value.Name.Equals("UserNotificationChanged")))
+            {
+                // Specify the background task
+                var builder = new BackgroundTaskBuilder()
                 {
-                    var elements = binding.GetTextElements();
-                    foreach (var element in elements)
-                    {
-                        // Assuming the element has a 'text' property
-                        var textElement = element.Text;
-                        Debug.WriteLine("Extracted Text: " + textElement);
-                    }
-                }
+                    Name = "UserNotificationChanged"
+                };
 
+                // Set the trigger for Listener, listening to Toast Notifications
+                builder.SetTrigger(new UserNotificationChangedTrigger(NotificationKinds.Toast));
+
+                // Register the task
+                builder.Register();
             }
         }
-        private string GetNotificationText(UserNotification notification, bool getTitle = true)
-        {
-            NotificationBinding toastBinding = notification.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
-            IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
 
-            if (getTitle)
+        private class YapeNotification
+        {
+            public string TitleText { get; set; }
+            public string ContentText { get; set; }
+            public string ClientName { get; set; }
+            public string Amount { get; set; }
+
+            public UserNotification Notification { get; set; }
+            public YapeNotification(UserNotification originalNotification)
             {
-                return textElements.FirstOrDefault()?.Text;
+                this.Notification = originalNotification;
+                this.TitleText = getTitle(originalNotification);
+                this.ContentText = getContent(originalNotification);
+                var clientData = getClient(originalNotification);
+                if (clientData != null)
+                {
+                    this.ClientName = clientData.Item1;
+                    this.Amount = clientData.Item2;
+                }
+
+
             }
-            else
+            private Tuple<string, string> getClient(UserNotification notification)
             {
+                string pattern = @"^Yape!\s+([A-Za-zÁÉÍÓÚáéíóúñÑ\s\.]+)\s+te\s+envió\s+un\s+pago\s+por\s+S\/\s(\d+\.?\d*)";
+
+                // Create a Regex object
+                Regex regex = new Regex(pattern);
+
+                // Match the input string against the regex pattern
+                Match match = regex.Match(getContent(notification));
+
+                if (match.Success)
+                {
+                    // Extract name and amount
+                    string name = match.Groups[1].Value.Trim();
+                    string amount = match.Groups[2].Value.Trim();
+
+                    // Print the result in the desired format
+                    Debug.WriteLine($"Yape Notification Metadata  :{name} {amount}");
+                    return new Tuple<string, string>(name, amount);
+                }
+                else
+                {
+                    Debug.WriteLine("No match found.");
+                    return null;
+                }
+            }
+            private string getTitle(UserNotification notification)
+            {
+                NotificationBinding toastBinding = notification.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
+                IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
+
+                return textElements.FirstOrDefault()?.Text;
+
+            }
+            private string getContent(UserNotification notification)
+            {
+                NotificationBinding toastBinding = notification.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
+                IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
+
                 return string.Join("\n", textElements.Skip(1).Select(t => t.Text));
             }
         }
-        public async Task notificationChangedHandler()
+
+
+
+
+        public async Task readNotifications()
         {
 
             IReadOnlyList<UserNotification> userNotifications = await listener.GetNotificationsAsync(NotificationKinds.Toast);
-
-            //check if notification already exist in List
-            
 
             foreach (UserNotification userNotification in userNotifications)
             {
                 if (!isValidNotification(userNotification))
                 {
-                    Debug.Print("Non valid notification");
                     continue;
                 }
 
+                YapeNotification notification = new YapeNotification(userNotification);
+
+                Debug.WriteLine("ID: " + userNotification.Id);
+                Debug.WriteLine(notification.TitleText);
+                Debug.WriteLine(notification.ContentText);
+                //IList<NotificationBinding> nBindings = userNotification.Notification.Visual.Bindings;
+
+                //foreach (var binding in nBindings)
+                //{
+                //    var elements = binding.GetTextElements();
+                //    foreach (var element in elements)
+                //    {
+                //        // Assuming the element has a 'text' property
+                //        var textElement = element.Text;
+                //        Debug.WriteLine("Extracted Text: " + textElement);
+                //    }
+                //}
+
+            }
+        }
+        private IList<UInt32> getNotificationIds(IList<UserNotification> notificationList)
+        {
+            IList<UInt32> notificationIds = new List<uint>();
+            foreach (UserNotification notification in notificationList)
+            {
+                notificationIds.Add(notification.Id);
+            }
+            return notificationIds;
+        }
+
+        private string GetNotificationTitle(UserNotification notification)
+        {
+            NotificationBinding toastBinding = notification.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
+            IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
+
+            return textElements.FirstOrDefault()?.Text;
+
+        }
+        public async Task notificationChangedHandler()
+        {
+            Debug.WriteLine("Notification Chaged Event Triggered");
+            IReadOnlyList<UserNotification> userNotifications = await listener.GetNotificationsAsync(NotificationKinds.Toast);
+
+            //check if notification already exist in List
+            IList<UInt32> registeredIds = this.getNotificationIds(this.yapeNotifications);
+
+            foreach (UserNotification userNotification in userNotifications)
+            {
+                if (!isValidNotification(userNotification))
+                {
+                    continue;
+                }
+                // Iterate over current valid Notifications and Returns all IDs
+
+
+                if (registeredIds.Contains(userNotification.Id))
+                {
+                    Debug.WriteLine("notification Already Registered: " + userNotification.Id);
+                    continue;
+                }
+                await PlayAudioConfirmation(userNotification);
                 storeNotification(userNotification);
             }
             //WriteNotificationsToFile(yapeNotifications, "C:\\Users\\ivan\\Desktop\\notificationListener\notifications.txt");
         }
+
         public Boolean isValidNotification(UserNotification notification)
         {
             //  Compare notification Date To system
@@ -157,13 +271,13 @@ namespace WindowsNotificationHandler
             DateTime notificationDate = notification.CreationTime.Date;
 
 
-            if (currentDateTime.ToString("yyyy-MM-dd") != notificationDate.ToString("yyyy-MM-dd"))
-            {
-                Debug.WriteLine("Invalid Notification - Date: " + notificationDate.ToString("yyyy-MM-dd"));
-                return false;
+            //if (currentDateTime.ToString("yyyy-MM-dd") != notificationDate.ToString("yyyy-MM-dd"))
+            //{
+            //    Debug.WriteLine("Invalid Notification - Date: " + notificationDate.ToString("yyyy-MM-dd"));
+            //    return false;
 
-            }
-            string titleText = GetNotificationText(notification, true);
+            //}
+            string titleText = GetNotificationTitle(notification);
 
             if (allowedNotificationTitles.Contains(titleText.ToLower()))
             {
@@ -176,6 +290,51 @@ namespace WindowsNotificationHandler
             }
 
         }
+        async private Task PlayAudioConfirmation(UserNotification notification)
+        {
+            // Play Yape - Notification Sound
+            Debug.WriteLine("Audio Confirmation Request");
+            var element = new MediaElement();
+            
+            var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets\\Sounds");
+            var file = await folder.GetFileAsync("alert.ogg");
+            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            element.SetSource(stream, "");
+            element.Play();
+            
+            // Play Client Metadata
+
+            YapeNotification ParsedNotification = new YapeNotification(notification);
+            MediaElement mediaElement = new MediaElement();
+            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+
+            SpeechSynthesisStream clientStream = await synth.SynthesizeTextToStreamAsync(ParsedNotification.ClientName + ParsedNotification.Amount);
+
+            // Send the stream to the media object.
+            mediaElement.SetSource(clientStream, clientStream.ContentType);
+            mediaElement.Play();
+
+        }
+        public static void WriteNotificationsToFile(IList<UserNotification> notifications, string fileName)
+        {
+            using (StreamWriter writer = new StreamWriter(fileName))
+            {
+                foreach (var notification in notifications)
+                {
+                    // Write the notification data to the file
+                    writer.WriteLine($"ID: {notification.Id}");
+                    writer.WriteLine(); // Adds a blank line between notifications for readability
+                }
+            }
+
+            Debug.WriteLine("Notifications written to file successfully.");
+        }
+        private void storeNotification(UserNotification notification)
+        {
+            yapeNotifications.Add(notification);
+            Debug.WriteLine("Local Notification - Notif saved  : \n" + notification.Id);
+        }
+
 
     }
 }

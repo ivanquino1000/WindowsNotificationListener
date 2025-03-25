@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-BH0AQ3B</Machine>
-    <WindowsUser>ivan</WindowsUser>
+    <Machine>DESKTOP-1MN38PE</Machine>
+    <WindowsUser>sann juan 2</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,282 +10,288 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec1c617b-680a-4d8c-ac03-f2e66f3c3ffa</PackageIdentityName>
     <PackageIdentityPublisher>CN=ivan</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\WindowsNotificationHandler.exe">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\WindowsNotificationHandler.exe">
       <PackagePath>entrypoint\WindowsNotificationHandler.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.asyncex.context\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Context.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.asyncex.context\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Context.dll">
       <PackagePath>Nito.AsyncEx.Context.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.asyncex.coordination\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Coordination.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.asyncex.coordination\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Coordination.dll">
       <PackagePath>Nito.AsyncEx.Coordination.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.asyncex.interop.waithandles\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Interop.WaitHandles.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.asyncex.interop.waithandles\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Interop.WaitHandles.dll">
       <PackagePath>Nito.AsyncEx.Interop.WaitHandles.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.asyncex.oop\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Oop.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.asyncex.oop\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Oop.dll">
       <PackagePath>Nito.AsyncEx.Oop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.asyncex.tasks\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.asyncex.tasks\5.1.2\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll">
       <PackagePath>Nito.AsyncEx.Tasks.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.cancellation\1.1.2\lib\netstandard2.0\Nito.Cancellation.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.cancellation\1.1.2\lib\netstandard2.0\Nito.Cancellation.dll">
       <PackagePath>Nito.Cancellation.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.collections.deque\1.1.1\lib\netstandard2.0\Nito.Collections.Deque.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.collections.deque\1.1.1\lib\netstandard2.0\Nito.Collections.Deque.dll">
       <PackagePath>Nito.Collections.Deque.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\nito.disposables\2.2.1\lib\netstandard2.0\Nito.Disposables.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\nito.disposables\2.2.1\lib\netstandard2.0\Nito.Disposables.dll">
       <PackagePath>Nito.Disposables.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\system.collections.immutable\1.7.1\lib\netstandard2.0\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\system.collections.immutable\1.7.1\lib\netstandard2.0\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SplashScreen.scale-400.png">
-      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square150x150Logo.scale-100.png">
-      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square150x150Logo.scale-125.png">
-      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square150x150Logo.scale-150.png">
-      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square150x150Logo.scale-400.png">
-      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.scale-100.png">
-      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.scale-125.png">
-      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.scale-150.png">
-      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.scale-400.png">
-      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-24.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\StoreLogo.scale-100.png">
-      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\StoreLogo.scale-125.png">
-      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\StoreLogo.scale-150.png">
-      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\StoreLogo.scale-200.png">
-      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\StoreLogo.scale-400.png">
-      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-100.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-125.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-150.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-400.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.backup.png">
+      <PackagePath>Assets\StoreLogo.backup.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Assets\Sounds\alert.ogg">
+      <PackagePath>Assets\Sounds\alert.ogg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\WindowsNotificationHandler.xr.xml">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\WindowsNotificationHandler.xr.xml">
       <PackagePath>WindowsNotificationHandler.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ivan\source\repos\WindowsNotificationHandler\WindowsNotificationHandler\bin\x86\Debug\Core\WindowsNotificationHandler.exe">
+    <AppxPackagedFile Include="C:\Users\sann juan 2\Desktop\windowsnotificationlistener\WindowsNotificationHandler\bin\x86\Debug\Core\WindowsNotificationHandler.exe">
       <PackagePath>WindowsNotificationHandler.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
